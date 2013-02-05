@@ -21,6 +21,16 @@ Or install it yourself as:
 
     $ gem install super_smtp
 
+## Usage
+
+To use, just add a third parameter when you initialize your Net::SMTP connection:
+
+```ruby
+# If my local interface is 192.168.0.2
+smtp = Net::SMTP.new('remote-mx.domain.com', 25, '192.168.0.2')
+# boom.  That's it.  Simplest gem evar.
+```
+
 ## TODO
 
   I dunno... Maybe submit a pull request to Ruby to support this?
